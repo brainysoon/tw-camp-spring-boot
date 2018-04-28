@@ -1,8 +1,9 @@
-package com.thoughtworks.fireman.dao.mockImpl;
+package com.thoughtworks.fireman.service.impl;
 
 import com.thoughtworks.fireman.Application;
 import com.thoughtworks.fireman.db.MockDB;
 import com.thoughtworks.fireman.domain.Employee;
+import com.thoughtworks.fireman.service.impl.EmployeeServiceImpl;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.mockito.InjectMocks;
@@ -18,13 +19,13 @@ import static org.mockito.BDDMockito.given;
 
 @RunWith(SpringJUnit4ClassRunner.class)
 @ContextConfiguration(classes = Application.class)
-public class EmployeeDAOMockImplTest {
+public class EmployeeServiceImplTest {
 
     @Mock
     private MockDB mockDB;
 
     @InjectMocks
-    private EmployeeDAOMockImpl employeeDAOMockImpl;
+    private EmployeeServiceImpl employeeDAOMockImpl;
 
     @Test
     public void add_should_return_negative_one_when_there_already_have_one() {

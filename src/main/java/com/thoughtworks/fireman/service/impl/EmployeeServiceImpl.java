@@ -1,6 +1,6 @@
-package com.thoughtworks.fireman.dao.mockImpl;
+package com.thoughtworks.fireman.service.impl;
 
-import com.thoughtworks.fireman.dao.EmployeeDAO;
+import com.thoughtworks.fireman.service.EmployeeService;
 import com.thoughtworks.fireman.domain.Employee;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -9,7 +9,7 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 @Service
-public class EmployeeDAOMockImpl implements EmployeeDAO {
+public class EmployeeServiceImpl implements EmployeeService {
 
     @Autowired
     private List<Employee> mockEmployeeList;

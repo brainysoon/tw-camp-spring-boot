@@ -1,10 +1,10 @@
-package com.thoughtworks.fireman.dao;
+package com.thoughtworks.fireman.service;
 
 import com.thoughtworks.fireman.domain.Employee;
 
 import java.util.List;
 
-public interface EmployeeDAO {
+public interface EmployeeService {
 
     int add(Employee employee);
 
