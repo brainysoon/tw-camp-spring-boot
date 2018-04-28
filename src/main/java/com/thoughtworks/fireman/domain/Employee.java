@@ -7,7 +7,7 @@ import lombok.Setter;
 @Getter
 public class Employee {
 
-    private int id;
+    private int id = -1;
     private String name;
     private int age;
     private int gender;
@@ -15,5 +15,9 @@ public class Employee {
     @Override
     public boolean equals(Object obj) {
         return obj != null && this.getId() == ((Employee) obj).getId();
+    }
+
+    public String getGender() {
+        return gender > 0 ? "男" : "女";
     }
 }
