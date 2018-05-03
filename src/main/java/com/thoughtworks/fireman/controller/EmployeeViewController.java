@@ -12,15 +12,17 @@ import org.springframework.web.servlet.ModelAndView;
 @RequestMapping(UriConstants.VIEW_EMPLOYEE)
 public class EmployeeViewController {
 
+    private static final String EMPLOYEES = "employees";
+    
     @Autowired
     private EmployeeService employeeService;
 
     @RequestMapping(UriConstants.ALL)
     public ModelAndView tableViewAll(ModelAndView modelAndView) {
 
-        modelAndView.addObject("employees", employeeService.queryByName(""));
+        modelAndView.addObject(EMPLOYEES, employeeService.queryByName(""));
         modelAndView.setViewName(ViewNameConstants.EMPLOYEE_TABLE);
 
-            return modelAndView;
+        return modelAndView;
     }
 }

@@ -7,6 +7,9 @@ import lombok.Setter;
 @Getter
 public class Employee {
 
+    public static final String MAN = "男";
+    public static final String WOMAN = "男";
+
     private int id = -1;
     private String name;
     private int age;
@@ -18,6 +21,6 @@ public class Employee {
     }
 
     public String getGender() {
-        return gender > 0 ? "男" : "女";
+        return gender > 0 ? MAN : WOMAN;
     }
 }

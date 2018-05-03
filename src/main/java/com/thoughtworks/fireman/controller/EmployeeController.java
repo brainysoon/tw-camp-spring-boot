@@ -12,6 +12,8 @@ import java.util.List;
 @RequestMapping(UriConstants.EMPLOYEE)
 public class EmployeeController {
 
+    private static final String EMPTY_NAME = "";
+
     @Autowired
     private EmployeeService employeeService;
 
@@ -42,6 +44,6 @@ public class EmployeeController {
     @GetMapping(UriConstants.ALL)
     public List<Employee> all() {
 
-        return employeeService.queryByName("");
+        return employeeService.queryByName(EMPTY_NAME);
     }
 }
