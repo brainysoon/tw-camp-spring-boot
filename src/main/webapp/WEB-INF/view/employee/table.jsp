@@ -6,26 +6,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Hello Fireman!</title>
-
-    <style>
-        .table-header {
-            font-size: 2.0rem;
-            background-color: #000;
-            color: #fff;
-        }
-
-        td, th {
-            padding-left: 2rem;
-        }
-
-        tr td {
-            border: 1px solid;
-        }
-
-        tr:nth-child(even) {
-            background-color: slategray;
-        }
-    </style>
+    <link rel="stylesheet" type="text/css" href="/resources/css/table.css"/>
 </head>
 <body>
 <h1>All Firemen!</h1>

@@ -1,0 +1,17 @@
+.table-header {
+    font-size: 2.0rem;
+    background-color: #000;
+    color: #fff;
+}
+
+td, th {
+    padding-left: 2rem;
+}
+
+tr td {
+    border: 1px solid;
+}
+
+tr:nth-child(even) {
+    background-color: slategray;
+}
