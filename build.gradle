@@ -27,6 +27,9 @@ targetCompatibility = 1.8
 dependencies {
     compile 'com.google.guava:guava:23.0'
     compile 'org.springframework.boot:spring-boot-starter-web'
+    compile 'org.springframework.boot:spring-boot-starter-tomcat'
+    compile 'org.apache.tomcat.embed:tomcat-embed-jasper'
+    compile 'javax.servlet:jstl'
 
     compileOnly 'org.projectlombok:lombok:1.16.20'
 
