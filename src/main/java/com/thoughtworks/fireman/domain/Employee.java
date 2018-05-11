@@ -8,7 +8,7 @@ import lombok.Setter;
 public class Employee {
 
     public static final String MAN = "男";
-    public static final String WOMAN = "男";
+    public static final String WOMAN = "女";
 
     private int id = -1;
     private String name;
